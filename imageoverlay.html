@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Overlay</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .parent_div {
+            height: 100vh;
+            width: 100vw;
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            font-weight: 800;
+        }
+        
+        .child_div {
+            height: 60vh;
+            width: 70vw;
+            background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.8) 50%, transparent 50%), url(https://images.unsplash.com/photo-1655217198197-77ed1f2b3a79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+            background-size: 100% 100%;
+            box-shadow: 0 10px 20px -6px #000;
+        }
+        
+        .child-content {
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+            width: 35vw;
+            flex-direction: column;
+        }
+        
+        span {
+            color: orange;
+        }
+        
+        @media screen and (max-width:480px) {
+            .parent_div {
+                font-size: 11px;
+                font-weight: 800;
+            }
+            .child_div {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://images.unsplash.com/photo-1655217198197-77ed1f2b3a79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+            }
+            .child-content {
+                height: 60vh;
+                width: 70vw;
+            }
+        }
+    </style>
+</head>
+<!-- 02067656097 95 -->
+
+<body>
+    <div class="parent_div">
+        <div class="child_div">
+            <div class="child-content">
+                <h1>Linear Gradient <span> Image Overlay</span></h1>
+                <h3>Created By Shauky</h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
